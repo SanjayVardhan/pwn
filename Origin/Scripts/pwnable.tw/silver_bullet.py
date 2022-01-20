@@ -31,7 +31,7 @@ powerup("B")
 
 #strncat -> string1 + string2 + \x00
 #48 max chars
-#power_up to overwrite length
+#power_up to overwrite length and add ropchain
 #leak libc puts and get libc.addr
 
 

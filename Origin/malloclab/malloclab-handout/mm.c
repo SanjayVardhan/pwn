@@ -57,9 +57,7 @@ void *coalesce(void *blk1, void *blk2)
     memset(blk2, 0, DSIZE);
     return blk1;
 }
-/*
-split the block into two blocks. The first block will be of size_t size.
-*/
+
 void *split(void *p, size_t size_d)
 { // if the size difference is zero return the original block
     if (size_d == 0)
@@ -200,7 +198,6 @@ void mm_free(void *ptr)
     {
         return;
     }
-    // set the header_t bytes to free
     else
     {
         // get size of the block
